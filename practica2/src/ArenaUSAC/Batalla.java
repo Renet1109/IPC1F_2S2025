@@ -1,14 +1,16 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+// Clase para registrar batallas con bitácora
 public class Batalla {
-    private int id;
-    private String participante1;
-    private String participante2;
-    private String ganador;
-    private String fecha;
-    private String bitacora;
+    private int id; // ID de la batalla
+    private String participante1; // Nombre del primer participante
+    private String participante2; // Nombre del segundo participante
+    private String ganador; // Nombre del ganador
+    private String fecha; // Fecha de la batalla
+    private String bitacora; // Log de eventos
 
+    // Constructor: Inicializa con ID y participantes, fecha automática
     public Batalla(int id, String p1, String p2) {
         this.id = id;
         this.participante1 = p1;
@@ -17,37 +19,25 @@ public class Batalla {
         this.bitacora = "";
     }
 
+    // Añadir evento a la bitácora
     public void agregarEvento(String evento) {
         bitacora += evento + "\n";
     }
 
+    // Establecer ganador
     public void setGanador(String ganador) {
         this.ganador = ganador;
     }
 
+    // Obtener resumen de la batalla
     public String getInfo() {
         return "Batalla " + id + " - Fecha: " + fecha + " - Participantes: " + participante1 + " vs " + participante2 + " - Ganador: " + ganador;
     }
 
+    // Obtener bitácora completa
     public String getBitacora() { return bitacora; }
 
     String getId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getParticipante1() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getParticipante2() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getGanador() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    boolean getFecha() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
