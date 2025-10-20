@@ -1,6 +1,6 @@
 
 
-package Proyecto2;
+package proyecto2;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -49,22 +49,7 @@ private JFrame loginframe;
                     showMainWindow();
                   
                 } 
-                
-                    if  (username.equals("vendedor") && password.equals("12345")) {
-                    // Cerrar ventana de login
-                    loginFrame.dispose();
-                    // Abrir ventana principal
-                    showvendedorwindow();
-                  
-                } 
-                    if  (username.equals("cliente") && password.equals("12345")) {
-                    // Cerrar ventana de login
-                    loginFrame.dispose();
-                    // Abrir ventana principal
-                    showclientewindow();
-                  
-                } 
-                    
+              
                     
                       
                 
@@ -97,7 +82,7 @@ private JFrame loginframe;
 
         mainFrame.setVisible(true);
     }
-    private void showvendedorwindow() {
+    /*private void showvendedorwindow() {
         // Configuración de la ventana principal
         JFrame mainFrame = new JFrame("Ventana Principal");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -124,7 +109,7 @@ private JFrame loginframe;
         mainFrame.add(welcomeLabel);
 
         mainFrame.setVisible(true);
-    }
+    }*/
 
     public static void main(String[] args) {
         // Ejecutar en el hilo de despacho de eventos
